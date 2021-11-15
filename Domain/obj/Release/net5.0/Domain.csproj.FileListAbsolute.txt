@@ -1,0 +1,12 @@
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\bin\Release\net5.0\Domain.deps.json
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\bin\Release\net5.0\Domain.dll
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\bin\Release\net5.0\ref\Domain.dll
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\bin\Release\net5.0\Domain.pdb
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.csproj.AssemblyReference.cache
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.AssemblyInfoInputs.cache
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.AssemblyInfo.cs
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.csproj.CoreCompileInputs.cache
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.dll
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\ref\Domain.dll
+E:\Freelance\F2X\TestF2XSolutionRecaudo\Domain\obj\Release\net5.0\Domain.pdb

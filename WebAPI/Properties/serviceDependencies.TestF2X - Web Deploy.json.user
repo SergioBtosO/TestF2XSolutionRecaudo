@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2021-11-14T20:19:24.0822371Z"
+    },
+    "apis1": {
+      "restored": true,
+      "restoreTime": "2021-11-14T19:53:19.415377Z"
+    }
+  },
+  "parameters": {
+    "apis1.resourceGroupName": {
+      "Name": "apis1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "SERBAROS_DEV_TECH"
+    },
+    "apis1.subscriptionId": {
+      "Name": "apis1.subscriptionId",
+      "Type": "subscription",
+      "Value": "197175df-c8a5-48e0-9fea-926edef79e50"
+    }
+  }
+}
