@@ -15,10 +15,10 @@ namespace Application.Specifications
             Query.Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize);
 
-            if (!string.IsNullOrEmpty(fechaRecaudo.ToString("yyyy-MM-dd")))
+            /*if (!string.IsNullOrEmpty(fechaRecaudo.ToString("yyyy-MM-dd")))
             {
                 Query.Search(x => x.fechaRecaudo.ToString("yyyy-MM-dd"), fechaRecaudo.ToString("yyyy-MM-dd"));
-            }
+            }*/
 
             if (!string.IsNullOrEmpty(estacion))
             {

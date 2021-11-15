@@ -9,10 +9,11 @@ namespace Application.DTOs
     public class RecaudoDTO
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Email { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-        public int Edad { get; set; }
+        public DateTime fechaRecaudo { get; set; }
+        public string estacion { get; set; }
+        public string sentido { get; set; }
+        public string categoria { get; set; }
+        public int hora { get; set; }
+        public int valorTabulado { get; set; }
     }
 }
