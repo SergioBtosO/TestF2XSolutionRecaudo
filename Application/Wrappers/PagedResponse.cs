@@ -12,8 +12,11 @@ namespace Application.Wrappers
 
         public int PageSize { get; set; }
 
-        public PagedResponse(T data, int pageNumber, int pageSize)
+        public int Total { get; set; }
+
+        public PagedResponse(T data, int pageNumber, int pageSize, int total)
         {
+            this.Total = total;
             this.PageNumber = pageNumber;
             this.PageSize = pageSize;
             this.Data = data;

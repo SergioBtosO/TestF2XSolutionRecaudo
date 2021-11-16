@@ -19,6 +19,7 @@ namespace WebAPI.Controllers.v1
     {
         //GET api/<controller>/
         [HttpGet()]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Get([FromQuery] GetAllRecaudosParameters filter)
         {
             return Ok(await Mediator.Send(new GetAllRecaudosQuery { 

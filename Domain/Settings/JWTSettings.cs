@@ -14,7 +14,7 @@ namespace Domain.Settings
 
         public string Audience { get; set; }
 
-        public double DurationMinutes { get; set; }
+        public double DurationInMinutes { get; set; }
 
         
 

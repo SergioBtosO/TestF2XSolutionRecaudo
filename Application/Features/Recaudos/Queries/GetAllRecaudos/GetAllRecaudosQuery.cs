@@ -7,6 +7,7 @@ using Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -38,11 +39,15 @@ namespace Application.Features.Recaudos.Queries.GetAllRecaudos
 
             public async Task<PagedResponse<List<RecaudoDTO>>> Handle(GetAllRecaudosQuery request, CancellationToken cancellationToken)
             {
-                var Recaudos = await _repositoryAsync.ListAsync(new PagedRecaudosSpecification(request.PageNumber,request.PageSize,request.fechaRecaudo,request.estacion,request.sentido,request.categoria,request.hora,request.valorTabulado));
+                var filter = new PagedRecaudosSpecification(request.PageNumber, request.PageSize, request.fechaRecaudo, request.estacion, request.sentido, request.categoria, request.hora, request.valorTabulado,true);
+                var filterCount = new PagedRecaudosSpecification(request.PageNumber, request.PageSize, request.fechaRecaudo, request.estacion, request.sentido, request.categoria, request.hora, request.valorTabulado,false);
+                var Recaudos = await _repositoryAsync.ListAsync(filter);
+
+               var RecaudosCount = await _repositoryAsync.ListAsync(filterCount);
 
                 var RecaudosDto = _mapper.Map<List<RecaudoDTO>>(Recaudos);
 
-                return new PagedResponse<List<RecaudoDTO>>(RecaudosDto,request.PageNumber,request.PageSize);
+                return new PagedResponse<List<RecaudoDTO>>(RecaudosDto,request.PageNumber,request.PageSize, RecaudosCount.Count);
             }
         }
     }

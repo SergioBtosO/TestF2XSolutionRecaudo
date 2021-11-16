@@ -10,11 +10,13 @@ namespace Application.Specifications
 {
     public class PagedRecaudosSpecification : Specification<Recaudo>
     {
-        public PagedRecaudosSpecification(int pageNumber, int pageSize, DateTime fechaRecaudo, string estacion, string sentido, string categoria, int hora, int valorTabulado)
+        public PagedRecaudosSpecification(int pageNumber, int pageSize, DateTime fechaRecaudo, string estacion, string sentido, string categoria, int hora, int valorTabulado,bool pagination)
         {
-            Query.Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize);
-
+            if (pagination)
+            {
+                Query.Skip(pageNumber * pageSize)
+                    .Take(pageSize);
+            }
             /*if (!string.IsNullOrEmpty(fechaRecaudo.ToString("yyyy-MM-dd")))
             {
                 Query.Search(x => x.fechaRecaudo.ToString("yyyy-MM-dd"), fechaRecaudo.ToString("yyyy-MM-dd"));
@@ -44,6 +46,9 @@ namespace Application.Specifications
             {
                 Query.Search(x => x.valorTabulado.ToString(), valorTabulado.ToString());
             }
+
+           
+
         }
     }
 }
